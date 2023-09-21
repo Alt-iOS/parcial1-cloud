@@ -7,6 +7,4 @@ RUN echo "Alias /parcial1 /usr/local/apache2/htdocs/parcial1/index.html" >> /usr
 
 COPY . /usr/local/apache2/htdocs/parcial1
 
-EXPOSE 8080
-
 ENTRYPOINT ["httpd", "-D", "FOREGROUND"]
